@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+            app:startDestination="@id/homeFragment">
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.splashscreen.HomeFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_homeFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.splashscreen.DetailsFragment"
+        android:label="Details" >
+        <action
+            android:id="@+id/action_detailsFragment_to_ekr3Fragment"
+            app:destination="@id/ekr3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ekr3Fragment"
+        android:name="com.example.splashscreen.ekr3Fragment"
+        android:label="fragment_ekr3"
+        tools:layout="@layout/fragment_ekr3" >
+        <action
+            android:id="@+id/action_ekr3Fragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+        <action
+            android:id="@+id/action_ekr3Fragment_to_ekr5Fragment"
+            app:destination="@id/ekr5Fragment" />
+        <action
+            android:id="@+id/action_ekr3Fragment_to_ekr4Fragment"
+            app:destination="@id/ekr4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ekr5Fragment"
+        android:name="com.example.splashscreen.ekr5Fragment"
+        android:label="fragment_ekr5"
+        tools:layout="@layout/fragment_ekr5" >
+        <action
+            android:id="@+id/action_ekr5Fragment_to_ekr3Fragment"
+            app:destination="@id/ekr3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ekr4Fragment"
+        android:name="com.example.splashscreen.ekr4Fragment"
+        android:label="fragment_ekr4"
+        tools:layout="@layout/fragment_ekr4" >
+        <action
+            android:id="@+id/action_ekr4Fragment_to_ekr3Fragment"
+            app:destination="@id/ekr3Fragment" />
+    </fragment>
+</navigation>
