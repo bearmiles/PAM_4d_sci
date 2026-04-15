@@ -22,6 +22,5 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        Log.v("TEST", )
     }
 }
